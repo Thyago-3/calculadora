@@ -24,15 +24,48 @@ class _MyWidgetState extends State<CalculadoraScreen> {
           ),
           Row(
             children: [
-              Expanded(child: FloatingActionButton(onPressed: () {})),
-              Expanded(child: FloatingActionButton(onPressed: () {})),
-              Expanded(child: FloatingActionButton(onPressed: () {})),
               Expanded(
                 child: SizedBox(
                   width: 80,
                   height: 80,
                   child: FloatingActionButton(
-                    child: Text("/", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                    shape: CircleBorder(),
+                    onPressed: () {},
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    shape: CircleBorder(),
+                    onPressed: () {},
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    shape: CircleBorder(),
+                    onPressed: () {},
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "/",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.white,
                     shape: CircleBorder(),
@@ -52,8 +85,16 @@ class _MyWidgetState extends State<CalculadoraScreen> {
             children: [
               Expanded(
                 child: SizedBox(
+                  width: 80,
+                  height: 80,
                   child: FloatingActionButton(
-                    child: Text("7"),
+                    child: Text(
+                      "7",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     shape: CircleBorder(),
                     onPressed: () {
                       setState(() {
@@ -64,40 +105,70 @@ class _MyWidgetState extends State<CalculadoraScreen> {
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("8"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "8";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "8",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "8";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("9"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "9";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "9",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "9";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("x", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "x",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.white,
                     shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      num1 = double.parse(display);
-                      operation = "*";
-                      display = "";
-                    });
-                  },
+                    onPressed: () {
+                      setState(() {
+                        num1 = double.parse(display);
+                        operation = "*";
+                        display = "";
+                      });
+                    },
+                  ),
                 ),
               ),
             ],
@@ -105,51 +176,91 @@ class _MyWidgetState extends State<CalculadoraScreen> {
           Row(
             children: [
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("4"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "4";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "4",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "4";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("5"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "5";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "5",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "5";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("6"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "6";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "6",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "6";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("-", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "-",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.white,
                     shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      num1 = double.parse(display);
-                      operation = "-";
-                      display = "";
-                    });
-                  },
+                    onPressed: () {
+                      setState(() {
+                        num1 = double.parse(display);
+                        operation = "-";
+                        display = "";
+                      });
+                    },
+                  ),
                 ),
               ),
             ],
@@ -157,51 +268,91 @@ class _MyWidgetState extends State<CalculadoraScreen> {
           Row(
             children: [
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("1"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "1";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "1",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "1";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("2"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "2";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "2",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "2";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("3"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "3";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "3",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "3";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("+", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "+",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.white,
                     shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      num1 = double.parse(display);
-                      operation = "+";
-                      display = "";
-                    });
-                  },
+                    onPressed: () {
+                      setState(() {
+                        num1 = double.parse(display);
+                        operation = "+";
+                        display = "";
+                      });
+                    },
+                  ),
                 ),
               ),
             ],
@@ -210,57 +361,86 @@ class _MyWidgetState extends State<CalculadoraScreen> {
             children: [
               Expanded(
                 flex: 2,
-                child: FloatingActionButton(
-                  child: Text("0"),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += "0";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "0",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += "0";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("."),
-                  shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      display += ".";
-                    });
-                  },
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      ".",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      setState(() {
+                        display += ".";
+                      });
+                    },
+                  ),
                 ),
               ),
               Expanded(
-                child: FloatingActionButton(
-                  child: Text("=", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                child: SizedBox(
+                  width: 80,
+                  height: 80,
+                  child: FloatingActionButton(
+                    child: Text(
+                      "=",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     backgroundColor: Colors.orange,
                     foregroundColor: Colors.white,
                     shape: CircleBorder(),
-                  onPressed: () {
-                    setState(() {
-                      num2 = double.parse(display);
-                    
+                    onPressed: () {
+                      setState(() {
+                        num2 = double.parse(display);
 
-                      switch (operation) {
-                        case "+":
-                          display = (num1 + num2).toString();
-                          break;
-                        case "-":
-                          display = (num1 - num2).toString();
-                          break;
-                        case "x":
-                          display = (num1 * num2).toString();
-                          break;
-                        case "/":
-                          display = (num1 / num2).toString();
-                      }
+                        switch (operation) {
+                          case "+":
+                            display = (num1 + num2).toString();
+                            break;
+                          case "-":
+                            display = (num1 - num2).toString();
+                            break;
+                          case "x":
+                            display = (num1 * num2).toString();
+                            break;
+                          case "/":
+                            display = (num1 / num2).toString();
+                        }
 
-                      operation = "";
-                      num1 = 0;
-                      num2 = 0;
-                    });
-                  },
+                        operation = "";
+                        num1 = 0;
+                        num2 = 0;
+                      });
+                    },
+                  ),
                 ),
               ),
             ],
