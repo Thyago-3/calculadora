@@ -29,8 +29,22 @@ class _MyWidgetState extends State<CalculadoraScreen> {
                   width: 80,
                   height: 80,
                   child: FloatingActionButton(
+                    child: Text(
+                      "AC",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     shape: CircleBorder(),
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        display = "";
+                        num1 = 0;
+                        num2 = 0;
+                        operation = "";
+                      });
+                    },
                   ),
                 ),
               ),
@@ -39,8 +53,19 @@ class _MyWidgetState extends State<CalculadoraScreen> {
                   width: 80,
                   height: 80,
                   child: FloatingActionButton(
+                    child: Text(
+                      "+/-",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     shape: CircleBorder(),
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        display = (double.parse(display) * -1).toString();
+                      });
+                    },
                   ),
                 ),
               ),
@@ -49,8 +74,19 @@ class _MyWidgetState extends State<CalculadoraScreen> {
                   width: 80,
                   height: 80,
                   child: FloatingActionButton(
+                    child: Text(
+                      "%",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     shape: CircleBorder(),
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        display = (double.parse(display) / 100).toString();
+                      });
+                    },
                   ),
                 ),
               ),
